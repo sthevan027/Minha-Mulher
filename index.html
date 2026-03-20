@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Uma página especial, feita com carinho, para celebrar o nosso dia."
+  >
+  <title>Para Você ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__glow hero__glow--left"></div>
+      <div class="hero__glow hero__glow--right"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow">Um pedacinho do que eu sinto</p>
+        <h1>Fiz isso pra você ❤️</h1>
+        <p class="hero__text">
+          Uma lembrança simples, mas feita com verdade. Do nosso jeito.
+        </p>
+        <a class="btn btn--primary" id="enter-button" href="#principal">Entrar</a>
+      </div>
+    </section>
+
+    <section class="page" id="principal">
+      <div class="page-layout">
+        <aside class="side-strip side-strip--left" aria-label="Fotos laterais à esquerda">
+          <figure class="side-photo side-photo--tall">
+            <img src="Fotos/foto04.jpeg" alt="Momento especial 7">
+          </figure>
+          <figure class="side-photo">
+            <img src="Fotos/foto08.jpeg" alt="Momento especial 8">
+          </figure>
+          <figure class="side-photo">
+            <img src="Fotos/foto11.jpeg" alt="Momento especial 9">
+          </figure>
+        </aside>
+
+        <div class="container">
+          <article class="card letter">
+            <span class="section-tag">💬 Carta</span>
+            <h2>Pra você</h2>
+            <p>
+              Nem tudo foi perfeito, mas tudo foi real. E isso, pra mim, sempre
+              significou muito.
+            </p>
+            <p>
+              Você esteve comigo em dias leves e em dias difíceis, e mesmo nas
+              fases mais confusas, a sua presença continuou fazendo diferença.
+            </p>
+            <p>
+              Eu fiz esse cantinho como um jeito simples de te lembrar que o que a
+              gente vive tem valor, tem memória e tem sentimento.
+            </p>
+            <p>
+              Obrigado por caminhar comigo enquanto eu construo a minha vida. Eu
+              quero continuar vivendo coisas bonitas ao seu lado.
+            </p>
+          </article>
+
+          <section class="card">
+            <div class="section-head">
+              <span class="section-tag">📸 Galeria</span>
+              <h2>Nossos momentos</h2>
+            </div>
+            <div class="gallery">
+              <figure class="photo">
+                <img src="Fotos/foto16.jpeg" alt="Foto especial 1 do casal">
+              </figure>
+              <figure class="photo">
+                <img src="Fotos/foto15.jpeg" alt="Foto especial 2 do casal">
+              </figure>
+              <figure class="photo">
+                <img src="Fotos/foto09.jpeg" alt="Foto especial 3 do casal">
+              </figure>
+              <figure class="photo">
+                <img src="Fotos/foto10.jpeg" alt="Foto especial 4 do casal">
+              </figure>
+              <figure class="photo">
+                <img src="Fotos/foto11.jpeg" alt="Foto especial 5 do casal">
+              </figure>
+              <figure class="photo">
+                <img src="Fotos/foto06.jpeg" alt="Foto especial 6 do casal">
+              </figure>
+            </div>
+          </section>
+
+          <section class="card music">
+            <div class="section-head">
+              <span class="section-tag">🎵 Música</span>
+              <h2>Nossa trilha</h2>
+            </div>
+            <p>
+              Clicando em entrar, a música já começa. Se quiser, você pode ajustar o volume.
+            </p>
+            <div class="music__controls">
+              <button class="btn btn--primary" id="toggle-music" type="button">
+                Pausar música
+              </button>
+              <label class="volume-control" for="volume-slider">
+                <span>Volume</span>
+                <input id="volume-slider" type="range" min="0" max="100" value="35">
+              </label>
+              <span class="music__hint" id="music-status">Pronta para tocar</span>
+            </div>
+            <audio id="music" loop preload="auto">
+              <source src="Music/Musica.mp3" type="audio/mpeg">
+              Seu navegador não suporta áudio em HTML5.
+            </audio>
+          </section>
+
+          <section class="ending">
+            <p class="ending__line">❤️ Feliz nosso dia.</p>
+          </section>
+        </div>
+
+        <aside class="side-strip side-strip--right" aria-label="Fotos laterais à direita">
+          <figure class="side-photo">
+            <img src="Fotos/foto01.jpeg" alt="Momento especial 10">
+          </figure>
+          <figure class="side-photo side-photo--wide">
+            <img src="Fotos/foto02.jpeg" alt="Momento especial 11">
+          </figure>
+          <figure class="side-photo">
+            <img src="Fotos/foto12.jpeg" alt="Momento especial 12">
+          </figure>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
