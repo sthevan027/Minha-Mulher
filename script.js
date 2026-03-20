@@ -1,5 +1,6 @@
 const music = document.getElementById("music");
 const enterButton = document.getElementById("enter-button");
+const mainPage = document.getElementById("principal");
 const toggleButton = document.getElementById("toggle-music");
 const volumeSlider = document.getElementById("volume-slider");
 const musicStatus = document.getElementById("music-status");
@@ -35,9 +36,18 @@ function updateVolume() {
   music.volume = Number(volumeSlider.value) / 100;
 }
 
-enterButton.addEventListener("click", () => {
+function enterSite(event) {
+  event.preventDefault();
+
   startMusic();
-});
+  document.body.classList.add("entered");
+
+  requestAnimationFrame(() => {
+    mainPage.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+enterButton.addEventListener("click", enterSite);
 
 toggleButton.addEventListener("click", toggleMusic);
 volumeSlider.addEventListener("input", updateVolume);
